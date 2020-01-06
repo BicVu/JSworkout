@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The DOM</title>
+  <link rel="stylesheet" href="../../base.css">
+  
+</head>
+
+<body>
+  <p class="bic">I am Bic, I <em>love</em> bread and <strong>Make websites!</strong></p>
+  <!--Each word separated by space is a different class-->
+  <img class="nice cool" src="https://picsum.photos/600" />
+
+  <div class="items">
+    <div class="item">
+      <img class="custom" data-last="bos" data-name="wes" src="https://picsum.photos/200" />
+      <img data-name="kait" src="https://picsum.photos/200" />
+      <img data-name="lux" src="https://picsum.photos/200" />
+    </div>
+    <div class="item item2">
+      <!-- <img src="https://picsum.photos/200" /> -->
+      <h2>
+        I am a heading
+        <style>
+          h2 {
+            color: red;
+          }
+        </style>
+        <span>I am hidden!</span>
+      </h2>
+      <p>Hi I'm a item</p>
+    </div>
+    <article class="item">
+      <h2>Im an article</h2>
+      <p class="pizza">This is how many pizzas I ate! 🍕</p>
+    </article>
+  </div>
+
+  <style>
+    h2 span {
+      display: none;
+    }
+
+    img {
+      transition: all 0.2s;
+    }
+
+    .round {
+      border-radius: 50%;
+      transform: rotate(90deg);
+      /* transform: rotate(0.5turn) scale(1.5); */
+      /* box-shadow: 0 0 10px black; */
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    .playerCard {
+      background: white;
+      padding: 20px
+    }
+    .playerCard h2 {
+      color: black;
+    }
+  </style>
+  <!-- <script src = "./creating-with-strings-BV.js"></script> -->
+  <!-- <script src= "./traversing-BV.js"></script> -->
+  <script src = "./DOM-Cardio-BV.js"></script>
+</body>
+
+</html>
