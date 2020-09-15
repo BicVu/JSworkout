@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land of Broken Promises</title>
+    <link rel="stylesheet" href="../base.css">
+</head>
+
+<body>
+    <script>
+        function makePizza(toppings) {
+            const pizzaPromise = new Promise(function(resolve, reject) {
+                // when you are aready you can resolve
+                // reject if something is wrong
+                resolve(`Ready with toppings ${toppings.join(', ')}!`);
+            });
+            return pizzaPromise;
+        }
+
+        const pepperoniPromise = makePizza(['pepperoni']);
+        const canadianPromise = makePizza(['pepperoni', 'mushroom', 'onion']);
+        console.log(pepperoniPromise, canadianPromise);
+    </script>
+</body>
+
+</html>
